@@ -6,6 +6,6 @@ const App = () => {
       <h1>React Tasks</h1>
     </div>
   );
-}
+};
 
 export default App;
