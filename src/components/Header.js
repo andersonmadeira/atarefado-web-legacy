@@ -18,7 +18,7 @@ class Header extends React.Component {
         const { nextTask } = this.state;
         return (
             <div className="header">
-                <h2 className="app-title">Task List</h2>
+                <h2 className="app-title">Atarefado</h2>
                 <form onSubmit={this.onFormSubmit}>
                     <input
                         className="entry-field"
