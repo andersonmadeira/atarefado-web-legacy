@@ -1,13 +1,10 @@
 li {
+    display: flex;
     cursor: pointer;
     position: relative;
-    padding: 12px 8px 12px 40px;
     background: #282c34;
-    color: #61dafb;
     font-size: 18px;
     transition: 0.2s;
-
-    /* make the list items unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -16,15 +13,33 @@ li {
 
 li:hover {
     background: #61dafb;
+}
+
+li:hover > span.label {
     color: #000;
 }
 
-li.checked {
+li:hover > span.close {
+    color: #000;
+}
+
+li:hover > span.close:hover {
+    color: #fff;
+}
+
+span.label {
+    color: #61dafb;
+    flex-grow: 1;
+    padding: 12px 0px 12px 40px;
+}
+
+li.checked > span.label {
     color: #64686a;
     text-decoration: line-through;
 }
 
-li.checked:hover {
+li.checked:hover > span.label,
+li.checked:hover > span.close {
     background: #61dafb;
     color: #000;
 }
@@ -47,14 +62,22 @@ li.checked:hover:before {
     border-style: solid;
 }
 
-.close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
+li.checked > span.close {
+    color: #64686a;
 }
 
-.close:hover {
+.close {
+    flex-grow: 0;
+    right: 0;
+    top: 0;
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    color: #61dafb;
+}
+
+li > span.close:hover,
+li.checked > span.close:hover {
     background-color: #f44336;
     color: white;
 }
