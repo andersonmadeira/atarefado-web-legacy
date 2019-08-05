@@ -1,15 +1,11 @@
 {
   "files": {
-    "main.css": "/react-task-list/static/css/main.57a46d1d.chunk.css",
+    "main.css": "/react-task-list/static/css/main.b0a3ecee.chunk.css",
     "main.js": "/react-task-list/static/js/main.a9727d77.chunk.js",
-    "main.js.map": "/react-task-list/static/js/main.a9727d77.chunk.js.map",
     "runtime~main.js": "/react-task-list/static/js/runtime~main.5d0ddac4.js",
-    "runtime~main.js.map": "/react-task-list/static/js/runtime~main.5d0ddac4.js.map",
     "static/js/2.6408f43b.chunk.js": "/react-task-list/static/js/2.6408f43b.chunk.js",
-    "static/js/2.6408f43b.chunk.js.map": "/react-task-list/static/js/2.6408f43b.chunk.js.map",
     "index.html": "/react-task-list/index.html",
-    "precache-manifest.13dc229d98c840319894ac4a3df3f626.js": "/react-task-list/precache-manifest.13dc229d98c840319894ac4a3df3f626.js",
-    "service-worker.js": "/react-task-list/service-worker.js",
-    "static/css/main.57a46d1d.chunk.css.map": "/react-task-list/static/css/main.57a46d1d.chunk.css.map"
+    "precache-manifest.89c090e02acdef4400e1c7eee960705a.js": "/react-task-list/precache-manifest.89c090e02acdef4400e1c7eee960705a.js",
+    "service-worker.js": "/react-task-list/service-worker.js"
   }
 }
