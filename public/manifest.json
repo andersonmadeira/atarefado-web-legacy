@@ -1,6 +1,6 @@
 {
-    "short_name": "Task List",
-    "name": "Sample Task List",
+    "short_name": "Atarefado",
+    "name": "Atarefado - Tasks App",
     "icons": [
         {
             "src": "icon-192.png",
@@ -16,5 +16,5 @@
     "start_url": ".",
     "display": "standalone",
     "theme_color": "#61DAFB",
-    "background_color": "#20232A"
+    "background_color": "#282c34"
 }
