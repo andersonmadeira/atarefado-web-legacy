@@ -54,7 +54,7 @@ class App extends React.Component {
         return (
             <div>
                 <div className="header">
-                    <h2 className="app-title">React Task List</h2>
+                    <h2 className="app-title">Task List</h2>
                     <input
                         className="entry-field"
                         type="text"
