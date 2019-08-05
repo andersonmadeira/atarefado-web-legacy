@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/react-task-list/static/css/main.b0a3ecee.chunk.css",
-    "main.js": "/react-task-list/static/js/main.a9727d77.chunk.js",
+    "main.js": "/react-task-list/static/js/main.f66a020a.chunk.js",
     "runtime~main.js": "/react-task-list/static/js/runtime~main.5d0ddac4.js",
     "static/js/2.6408f43b.chunk.js": "/react-task-list/static/js/2.6408f43b.chunk.js",
     "index.html": "/react-task-list/index.html",
-    "precache-manifest.89c090e02acdef4400e1c7eee960705a.js": "/react-task-list/precache-manifest.89c090e02acdef4400e1c7eee960705a.js",
+    "precache-manifest.b62b8675dacf15af11b8a56894b37759.js": "/react-task-list/precache-manifest.b62b8675dacf15af11b8a56894b37759.js",
     "service-worker.js": "/react-task-list/service-worker.js"
   }
 }
