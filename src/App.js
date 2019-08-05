@@ -31,6 +31,11 @@ class App extends React.Component {
     };
 
     handleTaskAdd = nextTask => {
+        if (!nextTask) return;
+
+        const exists = this.state.tasks.find(t => t.label === nextTask);
+        if (exists) return;
+
         const tasks = [...this.state.tasks, { label: nextTask, done: false }];
         this.setState({ tasks });
     };
