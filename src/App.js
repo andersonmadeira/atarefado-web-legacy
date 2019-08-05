@@ -2,31 +2,16 @@ import React from 'react';
 import TaskList from './components/TaskList';
 import Header from './components/Header';
 import './App.css';
+import { getTasks, removeTask, addTask, toggleTask } from './services/task';
 
 class App extends React.Component {
     state = {
-        tasks: [
-            {
-                label: 'Star Wars: The Last Jedi',
-                done: true,
-            },
-            {
-                label: 'Toy Story 4',
-                done: false,
-            },
-            {
-                label: 'Spider-Man: Far From Home',
-                done: false,
-            },
-            {
-                label: 'The Lion King',
-                done: false,
-            },
-        ],
+        tasks: [],
     };
 
     handleTaskRemove = task => {
         const tasks = this.state.tasks.filter(t => t.label !== task.label);
+        removeTask({ label: task.label });
         this.setState({ tasks });
     };
 
@@ -36,7 +21,10 @@ class App extends React.Component {
         const exists = this.state.tasks.find(t => t.label === nextTask);
         if (exists) return;
 
-        const tasks = [...this.state.tasks, { label: nextTask, done: false }];
+        const newTask = { label: nextTask, done: false };
+        const tasks = [...this.state.tasks, newTask];
+
+        addTask(newTask);
         this.setState({ tasks });
     };
 
@@ -44,8 +32,14 @@ class App extends React.Component {
         const tasks = this.state.tasks.map(t =>
             t.label === task.label ? { label: t.label, done: !t.done } : t
         );
+        toggleTask(task);
         this.setState({ tasks });
     };
+
+    componentDidMount() {
+        const tasks = getTasks();
+        this.setState({ tasks });
+    }
 
     render() {
         const { tasks } = this.state;
