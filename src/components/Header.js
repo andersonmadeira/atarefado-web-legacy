@@ -8,26 +8,30 @@ class Header extends React.Component {
         this.setState({ nextTask: e.target.value });
     };
 
+    onFormSubmit = e => {
+        e.preventDefault();
+        this.props.handleTaskAdd(this.state.nextTask);
+        this.setState({ nextTask: '' });
+    };
+
     render() {
-        const { handleTaskAdd } = this.props;
         const { nextTask } = this.state;
         return (
             <div className="header">
                 <h2 className="app-title">Task List</h2>
-                <input
-                    className="entry-field"
-                    type="text"
-                    spellCheck="false"
-                    value={nextTask}
-                    onChange={this.onInputChange}
-                    placeholder="Enter your next task..."
-                />
-                <span
-                    onClick={() => handleTaskAdd(nextTask)}
-                    className="add-button"
-                >
-                    Add
-                </span>
+                <form onSubmit={this.onFormSubmit}>
+                    <input
+                        className="entry-field"
+                        type="text"
+                        spellCheck="false"
+                        value={nextTask}
+                        onChange={this.onInputChange}
+                        placeholder="Enter your next task..."
+                    />
+                    <button type="submit" className="add-button">
+                        Add
+                    </button>
+                </form>
             </div>
         );
     }
