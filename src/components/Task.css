@@ -11,22 +11,6 @@ li {
     user-select: none;
 }
 
-li:hover {
-    background: #61dafb;
-}
-
-li:hover > span.label {
-    color: #000;
-}
-
-li:hover > span.close {
-    color: #000;
-}
-
-li:hover > span.close:hover {
-    color: #fff;
-}
-
 span.label {
     color: #61dafb;
     flex-grow: 1;
@@ -36,12 +20,6 @@ span.label {
 li.checked > span.label {
     color: #64686a;
     text-decoration: line-through;
-}
-
-li.checked:hover > span.label,
-li.checked:hover > span.close {
-    background: #61dafb;
-    color: #000;
 }
 
 li.checked::before {
@@ -55,11 +33,6 @@ li.checked::before {
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
-}
-
-li.checked:hover:before {
-    border-color: #000;
-    border-style: solid;
 }
 
 li.checked > span.close {
