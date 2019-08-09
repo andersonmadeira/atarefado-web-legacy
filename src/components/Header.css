@@ -1,5 +1,6 @@
 .app-title {
     margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .header {
@@ -20,7 +21,7 @@
     margin: 0;
     border: none;
     border-radius: 0;
-    width: 75%;
+    width: 80%;
     padding: 10px;
     float: left;
     font-size: 20px;
@@ -37,15 +38,19 @@
 }
 
 .add-button {
-    padding: 10px;
-    width: 25%;
+    padding: 8px;
+    width: 20%;
     background: #61dafb;
-    color: #000;
     float: left;
     text-align: center;
-    font-size: 20px;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;
     border-width: 0;
+}
+
+.add-button-svg {
+    fill: #20232a;
+    width: 25px;
+    height: 25px;
 }
