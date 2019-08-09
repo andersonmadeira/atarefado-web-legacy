@@ -1,9 +1,9 @@
-import React from 'react';
-import './Task.css';
+import React from 'react'
+import './Task.css'
 
 const Task = props => {
-    const { task, handleToggleStatus, handleTaskRemove } = props;
-    const classes = task.done ? 'checked' : '';
+    const { task, handleToggleStatus, handleTaskRemove } = props
+    const classes = task.done ? 'checked' : ''
 
     return (
         <li className={classes}>
@@ -13,14 +13,14 @@ const Task = props => {
             <span
                 className="close"
                 onClick={event => {
-                    event.stopPropagation();
-                    handleTaskRemove(task);
+                    event.stopPropagation()
+                    handleTaskRemove(task)
                 }}
             >
                 ×
             </span>
         </li>
-    );
-};
+    )
+}
 
-export default Task;
+export default Task
