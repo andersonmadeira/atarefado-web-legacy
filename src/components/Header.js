@@ -1,21 +1,25 @@
-import React from 'react';
-import './Header.css';
+import React from 'react'
+import './Header.css'
+import { translate } from '../locales'
+import { ReactComponent as SendIcon } from '../assets/send.svg'
 
 class Header extends React.Component {
-    state = { nextTask: '' };
+    state = { nextTask: '' }
 
     onInputChange = e => {
-        this.setState({ nextTask: e.target.value });
-    };
+        this.setState({ nextTask: e.target.value })
+    }
 
     onFormSubmit = e => {
-        e.preventDefault();
-        this.props.handleTaskAdd(this.state.nextTask);
-        this.setState({ nextTask: '' });
-    };
+        e.preventDefault()
+        this.props.handleTaskAdd(this.state.nextTask)
+        this.setState({ nextTask: '' })
+    }
 
     render() {
-        const { nextTask } = this.state;
+        const { nextTask } = this.state
+        const nextTaskPlaceholder = translate('task_hint')
+
         return (
             <div className="header">
                 <h2 className="app-title">Atarefado</h2>
@@ -26,15 +30,15 @@ class Header extends React.Component {
                         spellCheck="false"
                         value={nextTask}
                         onChange={this.onInputChange}
-                        placeholder="Enter your next task..."
+                        placeholder={nextTaskPlaceholder}
                     />
                     <button type="submit" className="add-button">
-                        Add
+                        <SendIcon className="add-button-svg" />
                     </button>
                 </form>
             </div>
-        );
+        )
     }
 }
 
-export default Header;
+export default Header
