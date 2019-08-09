@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/atarefado/precache-manifest.eb0e5bf60c850dbb24a35b1a7b30e4e9.js"
+  "/atarefado/precache-manifest.24936c2c64d273f145ca75174c17d094.js"
 );
 
 self.addEventListener('message', (event) => {

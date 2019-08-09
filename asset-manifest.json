@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/atarefado/static/css/main.b2588ebd.chunk.css",
-    "main.js": "/atarefado/static/js/main.2cbc9c51.chunk.js",
+    "main.css": "/atarefado/static/css/main.5707b349.chunk.css",
+    "main.js": "/atarefado/static/js/main.d180274d.chunk.js",
     "runtime~main.js": "/atarefado/static/js/runtime~main.9e6763f8.js",
-    "static/js/2.231aa381.chunk.js": "/atarefado/static/js/2.231aa381.chunk.js",
+    "static/js/2.8edb85a5.chunk.js": "/atarefado/static/js/2.8edb85a5.chunk.js",
     "index.html": "/atarefado/index.html",
-    "precache-manifest.eb0e5bf60c850dbb24a35b1a7b30e4e9.js": "/atarefado/precache-manifest.eb0e5bf60c850dbb24a35b1a7b30e4e9.js",
-    "service-worker.js": "/atarefado/service-worker.js"
+    "precache-manifest.24936c2c64d273f145ca75174c17d094.js": "/atarefado/precache-manifest.24936c2c64d273f145ca75174c17d094.js",
+    "service-worker.js": "/atarefado/service-worker.js",
+    "static/media/send.cce9c06f.svg": "/atarefado/static/media/send.cce9c06f.svg"
   }
 }
